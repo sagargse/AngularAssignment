@@ -1,0 +1,11 @@
+.footer-container{
+    position: absolute;    
+    width: 100%;
+    bottom: 0;
+    /* background-image: linear-gradient(to right, #bdc3c7, #2c3e50); */
+    background-image: linear-gradient(to right, #02aab0, #00cdac);
+    box-shadow: 2px 2px 10px 6px rgba(0, 0, 0, 0.527);
+}
+.icons{
+    width: 1.8rem;
+}
