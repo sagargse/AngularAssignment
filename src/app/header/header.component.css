@@ -1,0 +1,13 @@
+.nav-conatiner{
+    box-shadow: 2px 2px 10px 6px rgba(0, 0, 0, 0.527);
+    background-image: linear-gradient(to right, #02aab0, #00cdac);
+}
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;    
+}
+.icons{    
+    width: 2.5rem;
+    color: aqua;
+}
