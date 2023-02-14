@@ -1,0 +1,62 @@
+{
+  "employeeList": [
+    {
+      "employeeName": "Seema Devi",
+      "mailid": "seema.devi@ext-crisil.com",
+      "dob": "1990-02-03T18:30:00.000Z",
+      "gender": "Female",
+      "designation": "Employee",
+      "id": 6
+    },
+    {
+      "employeeName": "Sagar Raj",
+      "mailid": "sagar.raj@ext-crisil.com",
+      "dob": "2000-08-19T18:30:00.000Z",
+      "gender": "Male",
+      "designation": "Intern",
+      "id": 7
+    },
+    {
+      "employeeName": "Deepak Naidu",
+      "mailid": "deepak.naidu@ext-crisil.com",
+      "dob": "2000-03-13T18:30:00.000Z",
+      "gender": "Male",
+      "designation": "Intern",
+      "id": 8
+    },
+    {
+      "employeeName": "Parmeet Sandhu",
+      "mailid": "parmeet.sandhu@ext-crisil.com",
+      "dob": "2001-02-15T18:30:00.000Z",
+      "gender": "Male",
+      "designation": "Intern",
+      "id": 9
+    },
+    {
+      "employeeName": "Divya Khapekar",
+      "mailid": "divya.khapekar@ext-crisil.com",
+      "dob": "2000-02-06T18:30:00.000Z",
+      "gender": "Female",
+      "designation": "Intern",
+      "id": 10
+    },
+    {
+      "employeeName": "Vaishnavi Mahale",
+      "mailid": "vaishnavi.mahale@ext-crisil.com",
+      "dob": "2001-03-21T18:30:00.000Z",
+      "gender": "Female",
+      "designation": "Intern",
+      "id": 11
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

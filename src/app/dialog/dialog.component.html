@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>Add Employee</h1>
+<div mat-dialog-content class="form-contents">
+    <form [formGroup]="employeeForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Employee Name</mat-label>
+            <input formControlName="employeeName" matInput placeholder="Sagar Raj">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Company Mail-Id</mat-label>
+            <input formControlName="mailid" matInput placeholder="sagar.raj@ext-crisil.com">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Date of Birth</mat-label>
+            <input formControlName="dob" matInput [matDatepicker]="picker" placeholder="8/20/2023">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <label for=""><h2>Gender :</h2></label>
+        <mat-radio-group formControlName="gender">
+            <mat-radio-button value="Male">Male</mat-radio-button>
+            <mat-radio-button value="Female">Female</mat-radio-button>
+            <mat-radio-button value="Others">Others</mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field appearance="outline">
+            <mat-label>Designation</mat-label>
+            <input formControlName="designation" matInput placeholder="Intern">
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions align="end">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button mat-raised-button color="primary" (click)="addEmployee()">{{actionBtn}}</button>
+</div>
