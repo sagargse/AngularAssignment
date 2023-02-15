@@ -5,6 +5,8 @@ import { ApiService } from '../services/api.service';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
+import * as XLSX from 'xlsx';
+import { FileSaverService } from 'ngx-filesaver';
 
 @Component({
   selector: 'app-crud',
@@ -75,5 +77,11 @@ export class CrudComponent implements OnInit {
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
+  }
+  downloadReport(){
+    const EXCEL_TYPE = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8';
+    const EXCEL_EXTENSION = '.xlsx';
+
+    const worksheet = XLSX.utils.json_to_sheet(this)
   }
 }

@@ -7,8 +7,8 @@
     <h3>Contents</h3>
     <nav>
         <ul>
-            <li class="active"><a href="" class="content-links text-light">Employee CRUD</a></li>
-            <li><a href="" class="content-links text-light">Chapter 2</a></li>
+            <li class="active"><a class="content-links text-light" routerLink="employeecrud">Employee CRUD</a></li>
+            <li><a class="content-links text-light" routerLink="sample">Chapter 2</a></li>
             <li><a href="" class="content-links text-light">Chapter 3</a></li>
             <li><a href="" class="content-links text-light">Chapter 4</a></li>
             <li><a href="" class="content-links text-light">Chapter 5</a></li>
@@ -21,6 +21,9 @@
     </nav>
 </aside>
 
-<section class="main">
+<section class="main" *ngIf="this.router.url === '/employeecrud'">
     <app-crud></app-crud>
+</section>
+<section class="main" *ngIf="this.router.url === '/sample'">
+    <app-sample></app-sample>
 </section>
