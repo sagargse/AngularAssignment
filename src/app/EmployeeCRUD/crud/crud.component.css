@@ -1,0 +1,41 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+table {
+    width: 100%;
+}
+
+.mat-mdc-form-field {
+    font-size: 15px;
+    width: 100%;
+}
+td,
+th {
+    width: 15%;
+}
+.excel{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    position:sticky;
+}
+.employee-table{
+    overflow-x: auto;
+    margin: 10px 0 60px 0;
+}
+.emp-header{
+    margin-top: 20px;
+}
+.add-btn{
+    position: sticky;
+}
+@media only screen and (max-width: 1024px) {
+    .emp-header{
+        font-size: 15px;
+    }
+    .add-btn{
+        width: 30%;
+        font-size: 10px;
+    }
+}

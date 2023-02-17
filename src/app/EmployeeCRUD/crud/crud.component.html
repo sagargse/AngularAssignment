@@ -1,20 +1,20 @@
-<mat-toolbar>
+<mat-toolbar class="emp-header">
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
         <mat-icon>group_work</mat-icon>
     </button>
     <span>Employee CRUD</span>
     <span class="example-spacer"></span>
-    <button mat-raised-button color="warn" (click)="openDialog()">Add Employee</button>
+    <button mat-raised-button color="warn" (click)="openDialog()" class="add-btn">Add Employee</button>
 </mat-toolbar>
 <div class="container">
-    <div style="margin: 10px 0 60px 0;">
+    <div class="employee-table">
         <mat-form-field>
             <mat-label>Filter</mat-label>
             <input matInput (keyup)="applyFilter($event)" placeholder="Ex: Sagar" #input>
         </mat-form-field>
 
         <div class="mat-elevation-z8">
-            <table mat-table [dataSource]="dataSource" matSort>
+            <table mat-table [dataSource]="dataSource" matSort id="excel-table">
 
                 <ng-container matColumnDef="employeeName">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Employee Name </th>
@@ -63,8 +63,8 @@
             <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
         </div>
     </div>
-    <div class="excel" style="display: flex; justify-content: center;">
-        <button mat-fab extended color="primary" (click)="downloadReport()">
+    <div class="excel">
+        <button mat-fab extended color="primary" (click)="exportexcel()">
             <mat-icon>download</mat-icon>
             Download Report
         </button>

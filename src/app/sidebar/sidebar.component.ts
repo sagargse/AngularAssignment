@@ -7,9 +7,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-  // contents = ["Employee CRUD", "Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", 
-  //             "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9", "Chapter 10", "Chapter 11",
-  //             "Chapter 12"];
+  contents = ["Employee CRUD", "Sample", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", 
+              "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9", "Chapter 10", "Chapter 11",
+              "Chapter 12"];
+  links = ["employeecrud","sample","Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", 
+            "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9", "Chapter 10", "Chapter 11",
+            "Chapter 12"];
   // showHide :boolean = true;
   // showMap : boolean = true;
   // ngOnInit(){

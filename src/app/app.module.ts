@@ -7,8 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CrudComponent } from './crud/crud.component';
-import { DialogComponent } from './dialog/dialog.component';
+import { CrudComponent } from './EmployeeCRUD/crud/crud.component';
+import { DialogComponent } from './EmployeeCRUD/dialog/dialog.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
